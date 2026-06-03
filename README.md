@@ -1,236 +1,291 @@
-# sdr-bdr-ai-automation-guide
-Guia completo de IA para pré-vendas B2B.  Framework prático 90 dias, 20+ prompts e cases reais  para SDRs e BDRs aumentarem produtividade em 124%.
+# IA Aplicada a Pré-Vendas B2B: SDRs, BDRs e Automação com NotebookLM
 
-# IA Aplicada a Pré-Vendas B2B: Aumentando Produtividade, Personalização e Conversão
+Projeto desenvolvido para o desafio da DIO sobre o uso de Inteligência Artificial como ferramenta de aprendizagem ativa, curadoria de fontes e organização do conhecimento com NotebookLM.
 
-**Projeto de Pesquisa e Curadoria de Conhecimento | Desafio DIO**
+Repositório: `sdr-bdr-ai-automation-guide`
 
-![Status](https://img.shields.io/badge/Status-Ativo-brightgreen)
+## Contexto
 
-![Versão](https://img.shields.io/badge/Vers%C3%A3o-1.0-blue)
+O tema escolhido para este caderno temático foi o uso de Inteligência Artificial em pré-vendas B2B, com foco nas rotinas de SDRs, BDRs e times de RevOps.
 
-![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-success)
+Em vendas B2B, profissionais de pré-vendas lidam diariamente com pesquisa de contas, priorização de leads, personalização de mensagens, follow-ups, atualização de CRM e qualificação de oportunidades. A IA pode apoiar essas tarefas ao organizar dados, sugerir mensagens, identificar padrões e acelerar pesquisas. Ao mesmo tempo, o uso de IA exige senso crítico: dados ruins geram respostas ruins, automação sem estratégia prejudica a experiência do prospect e respostas de IA precisam ser validadas em fontes confiáveis.
 
----
+Este projeto usa o NotebookLM como ferramenta de estudo para transformar fontes abertas em um miniguia prático sobre como aplicar IA de forma responsável e produtiva em pré-vendas B2B.
 
-## 📋 ÍNDICE
+## Objetivos do Estudo
 
-1. [Contexto](#contexto)
+1. Entender como a IA está mudando a rotina de SDRs e BDRs.
+2. Mapear casos de uso práticos de IA em prospecção, qualificação e cadências.
+3. Identificar limites, riscos e cuidados no uso de automação em vendas.
+4. Criar prompts reutilizáveis para estudar, revisar e aplicar o tema.
+5. Produzir um miniguia de estudo organizado para consulta futura e portfólio.
 
-2. [Objetivos do Estudo](#objetivos-do-estudo)
+## Curadoria de Fontes
 
-3. [Justificativa](#justificativa)
+As fontes abaixo foram selecionadas para alimentar o caderno no NotebookLM. A ideia foi combinar relatórios de mercado, artigos de análise e documentação oficial da ferramenta utilizada.
 
-4. [Curadoria de Fontes](#curadoria-de-fontes)
+| Fonte | Tipo | Link | Por que foi escolhida |
+|---|---|---|---|
+| Salesforce State of Sales, 7th Edition | Relatório de mercado | https://www.salesforce.com/en/wp-content/uploads/sites/4/documents/reports/sales/salesforce-state-of-sales-report-2026.pdf | Traz dados recentes sobre vendas, IA, agentes, qualidade de dados e produtividade comercial. |
+| HubSpot 2025 State of Sales Report | Relatório/artigo de tendências | https://blog.hubspot.com/sales/hubspot-sales-strategy-report | Mostra desafios atuais de vendas, uso de IA por compradores e vendedores, e mudanças no papel do vendedor. |
+| McKinsey - The economic potential of generative AI | Pesquisa executiva | https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier | Ajuda a entender impactos de IA generativa em marketing e vendas, incluindo produtividade e personalização. |
+| Google NotebookLM Help - Add or discover sources | Documentação oficial | https://support.google.com/notebooklm/answer/16215270 | Fonte oficial para entender como adicionar fontes, usar pesquisa e organizar materiais no NotebookLM. |
+| Apollo.io | Página de produto/ferramenta | https://www.apollo.io/pt | Exemplo prático de plataforma usada em prospecção B2B, enriquecimento de dados e cadências comerciais. |
 
-5. [Configuração do NotebookLM](#configuração-do-notebooklm)
+Observação: durante o estudo, alguns dados encontrados em materiais de mercado devem ser tratados como referência contextual, não como verdade absoluta. Sempre que um número for usado em apresentações ou entrevistas, ele deve ser citado com fonte, data e contexto.
 
-6. [Engenharia de Prompts](#engenharia-de-prompts)
+## Como Configurei o NotebookLM
 
-7. [Cicatrizes e Troubleshooting](#cicatrizes-e-troubleshooting)
+Nome do caderno:
 
-8. [Miniguia de Estudos](#miniguia-de-estudos)
+`IA em Pré-Vendas B2B: SDRs, BDRs e RevOps`
 
-9. [Prompts Reutilizáveis](#prompts-reutilizáveis)
+Fontes adicionadas:
 
-10. [Insights para LinkedIn](#insights-para-linkedin)
+1. Relatório Salesforce State of Sales.
+2. Artigo/relatório HubSpot State of Sales.
+3. Artigo McKinsey sobre potencial econômico da IA generativa.
+4. Documentação oficial do NotebookLM.
+5. Página da Apollo.io como exemplo de ferramenta de mercado.
 
-11. [Valor para Recrutadores](#valor-para-recrutadores)
+Organização sugerida dentro do caderno:
 
-12. [Diferenciais para Portfólio](#diferenciais-para-portfólio)
+- `01 - Mercado e tendências`
+- `02 - IA aplicada a vendas`
+- `03 - SDR, BDR e RevOps`
+- `04 - Ferramentas e automação`
+- `05 - Prompts e revisões`
 
----
+## Engenharia de Prompts
 
-## 🌍 CONTEXTO
+Durante o estudo, usei prompts em quatro categorias: compreensão, comparação, aplicação prática e revisão crítica.
 
-### A Realidade Atual da IA em Vendas B2B (2025-2026)
+### Prompt 1 - Resumo Executivo
 
-A inteligência artificial está redefinindo completamente o papel de **SDRs (Sales Development Representatives)** e **BDRs (Business Development Representatives)** no universo B2B.
+```text
+Com base apenas nas fontes adicionadas ao caderno, crie um resumo executivo sobre IA em pré-vendas B2B. Estruture em: contexto, principais tendências, impacto para SDRs/BDRs, riscos e recomendações práticas.
+```
 
-#### Dados Relevantes:
+Resultado esperado: uma visão geral para abrir o README e explicar o tema de forma clara.
 
-- **80% dos vendedores B2B** já apostam em inteligência artificial e CRM integrados (2026)
+### Prompt 2 - Conceitos Fundamentais
 
-- **60% das organizações** migraram de operações baseadas em intuição para data-driven
+```text
+Explique os conceitos SDR, BDR, RevOps, ICP, lead scoring, intent data, cadência comercial e automação de vendas. Para cada conceito, traga uma definição simples, um exemplo prático e um cuidado importante.
+```
 
-- **Produtividade SDR:** Aumento de **+124%** com implementação correta de IA
+Resultado esperado: base para o glossário.
 
-- **Tempo em tarefas administrativas:** Redução de **70% para 30%** do dia do vendedor
+### Prompt 3 - Comparação Antes e Depois
 
-- **Qualidade de leads:** Redução de **35%** no custo por lead qualificado
+```text
+Compare a rotina de um SDR antes e depois do uso de IA. Considere pesquisa de contas, personalização, priorização de leads, follow-up, CRM e qualificação. Mostre também quais tarefas continuam exigindo julgamento humano.
+```
 
-#### O Cenário:
+Resultado esperado: entender onde a IA ajuda e onde o humano continua essencial.
 
-Em 2026, a automação inteligente transferiu tarefas repetitivas para IA — pesquisa manual, envio em massa, qualificação básica. O SDR evoluiu para um papel **estratégico e consultivo**, focado em:
+### Prompt 4 - Guia de Implementação
 
-✅ Personalização em escala  
+```text
+Crie um plano de implementação de IA em pré-vendas para uma empresa B2B pequena ou média. Divida em 30, 60 e 90 dias. Inclua objetivos, atividades, responsáveis, métricas e riscos.
+```
 
-✅ Construção de relacionamentos  
+Resultado esperado: framework prático de aplicação.
 
-✅ Negociação consultiva  
+### Prompt 5 - Revisão Crítica
 
-✅ Qualificação estratégica  
+```text
+Revise a resposta anterior como se você fosse um gestor de RevOps. Aponte lacunas, riscos, dados que precisam de validação e perguntas que deveriam ser feitas antes de implementar a solução.
+```
 
-✅ Análise de intent  
+Resultado esperado: evitar uma resposta bonita, mas superficial.
 
----
+### Prompt 6 - Prompts para Revisão
 
-## 🎯 OBJETIVOS DO ESTUDO
+```text
+Crie 10 perguntas de revisão para eu testar se entendi o tema IA em pré-vendas B2B. Separe em nível iniciante, intermediário e avançado. Depois, gere um gabarito comentado.
+```
 
-Este projeto busca:
+Resultado esperado: transformar o caderno em ferramenta de estudo.
 
-1. **Compreender** como tecnologias de IA transformam operações de pré-vendas B2B
+## Cicatrizes e Troubleshooting
 
-2. **Mapear** casos de uso práticos de IA para SDRs, BDRs e equipes RevOps
+### 1. Respostas genéricas
 
-3. **Identificar** ferramentas e plataformas líderes em automação de vendas
+Problema: o NotebookLM respondeu com frases muito amplas, sem exemplos concretos.
 
-4. **Documentar** frameworks de implementação de IA em prospecção
+Como ajustei: pedi para responder "com base apenas nas fontes" e exigir exemplos, riscos e aplicações práticas.
 
-5. **Criar** biblioteca reutilizável de prompts para aplicações práticas
+### 2. Excesso de foco em ferramenta
 
-6. **Sintetizar** melhores práticas e tendências do mercado
+Problema: algumas respostas davam a entender que comprar uma ferramenta resolveria o processo comercial.
 
-7. **Preparar** profissionais de pré-vendas para a era da IA
+Como ajustei: incluí perguntas sobre processo, dados, treinamento, CRM, governança e métricas.
 
-8. **Estruturar** conhecimento em formato profissional para portfólio
+### 3. Números sem contexto
 
----
+Problema: relatórios de mercado trazem estatísticas que podem variar por amostra, país, setor e ano.
 
-## 💡 JUSTIFICATIVA
+Como ajustei: passei a registrar fonte, data e contexto antes de usar qualquer número no miniguia.
 
-### Por Que Este Tema é Relevante?
+### 4. Prompts muito longos
 
-#### Para SDRs e BDRs:
+Problema: prompts com muitas tarefas geravam respostas confusas.
 
-- **Competitividade:** Profissionais que dominam IA ganham até 45% mais em comissão
+Como ajustei: dividi em etapas: primeiro resumo, depois glossário, depois comparação, depois plano prático.
 
-- **Produtividade:** Recuperação de 2 horas/dia em tarefas operacionais
+### 5. Falta de visão crítica
 
-- **Qualidade:** Aumento em taxa de conversão por contatos mais qualificados
+Problema: a IA tende a listar benefícios e pode reduzir os riscos.
 
-- **Carreira:** Diferencial estratégico no mercado de trabalho
+Como ajustei: usei prompts pedindo limitações, riscos, pré-condições e perguntas de diagnóstico.
 
-#### Para Profissionais de RevOps:
+## Miniguia de Estudo
 
-- **Alinhamento:** Estruturar sales e marketing com IA como pilar
+### 1. O que é IA em pré-vendas B2B?
 
-- **Eficiência:** Redução de overhead operacional em até 40%
+É o uso de modelos de IA, automações e análise de dados para apoiar atividades anteriores ao fechamento da venda, como pesquisa de empresas, identificação de leads, priorização de contas, criação de mensagens personalizadas e qualificação inicial.
 
-- **Previsibilidade:** Forecast 28% mais preciso com IA
+### 2. Onde a IA ajuda SDRs e BDRs?
 
-- **Escalabilidade:** Crescimento de receita alinhado à estrutura
+- Pesquisa de contas e segmentos.
+- Criação de listas com critérios de ICP.
+- Priorização de prospects com maior potencial.
+- Sugestão de mensagens personalizadas.
+- Resumo de informações sobre empresas.
+- Preparação para calls.
+- Registro e organização de informações no CRM.
+- Análise de padrões em ganhos e perdas.
 
-#### Para Inteligência Comercial:
+### 3. Onde a IA não substitui o humano?
 
-- **Insights:** Análise preditiva de comportamento de compradores
+- Construir relação com o prospect.
+- Interpretar contexto político e emocional da compra.
+- Negociar prioridades e objeções complexas.
+- Validar se uma oportunidade realmente faz sentido.
+- Tomar decisões éticas sobre abordagem, dados e privacidade.
 
-- **Padrões:** Identificação automática de intent signals
+### 4. Framework simples de implementação
 
-- **Dados:** Enriquecimento em escala de base de prospects
+#### Primeiros 30 dias: diagnóstico
 
-- **ROI:** Justificativa orçamentária baseada em dados
+- Mapear processo atual de prospecção.
+- Definir ICP e critérios de qualificação.
+- Identificar tarefas repetitivas.
+- Auditar qualidade dos dados no CRM.
+- Escolher um caso de uso pequeno para piloto.
 
-#### Para o Mercado:
+#### Dias 31 a 60: piloto
 
-- **Investimento:** Mercado RevOps crescendo 13.5% ao ano (até 2033)
+- Testar IA em pesquisa de contas e personalização.
+- Criar biblioteca de prompts.
+- Medir tempo economizado e qualidade das respostas.
+- Coletar feedback dos SDRs/BDRs.
+- Ajustar cadências e critérios de lead scoring.
 
-- **Demanda:** 75% das empresas planeja aumentar investimento em IA para vendas
+#### Dias 61 a 90: escala controlada
 
-- **Gap:** Escassez de profissionais preparados para IA + vendas
+- Padronizar prompts e playbooks.
+- Treinar o time.
+- Integrar aprendizados ao CRM e ao processo comercial.
+- Criar dashboard de métricas.
+- Revisar riscos de dados, privacidade e qualidade.
 
----
+### 5. Métricas para acompanhar
 
-## 📚 CURADORIA DE FONTES
+- Tempo médio de pesquisa por conta.
+- Taxa de resposta por cadência.
+- Conversão de lead para oportunidade.
+- Qualidade dos dados no CRM.
+- Volume de leads qualificados por semana.
+- Taxa de reuniões agendadas.
+- Motivos de perda.
+- Aderência dos SDRs ao processo.
 
-### Fonte 1: Full Sales System - IA em Pré-Vendas B2B 2026
+## Glossário
 
-| Campo | Descrição |
+| Termo | Definição |
+|---|---|
+| SDR | Profissional focado em prospectar, abordar e qualificar leads, geralmente inbound ou outbound. |
+| BDR | Profissional focado em desenvolvimento de novos negócios, muitas vezes com prospecção outbound e contas estratégicas. |
+| RevOps | Área que integra vendas, marketing, sucesso do cliente, dados, processos e ferramentas para melhorar receita. |
+| ICP | Perfil de Cliente Ideal; define quais empresas têm maior fit com a solução. |
+| Lead Scoring | Método para pontuar leads de acordo com fit, interesse e comportamento. |
+| Intent Data | Sinais que indicam possível interesse de compra, como pesquisas, visitas, downloads ou comportamento digital. |
+| Cadência | Sequência planejada de contatos por e-mail, telefone, LinkedIn, WhatsApp ou outros canais. |
+| CRM | Sistema usado para registrar e acompanhar relacionamento com leads, oportunidades e clientes. |
+| Enriquecimento de Dados | Processo de complementar dados de uma conta ou contato com informações adicionais. |
+| Handoff | Passagem de um lead qualificado do SDR/BDR para o executivo de vendas. |
+| Automação | Uso de sistemas para executar tarefas repetitivas com pouca intervenção manual. |
+| Prompt | Instrução escrita para orientar uma IA a gerar uma resposta ou executar uma tarefa. |
 
-|-------|-----------|
+## Prompts Reutilizáveis
 
-| **Nome** | IA na Pré-Venda B2B em 2026: Automação Inteligente Sem Perder a Conversão |
+```text
+1. Resuma esta fonte em 10 bullets e destaque os pontos mais importantes para SDRs.
+```
 
-| **Link** | https://fullsalessystem.com/blog/ia-pre-venda-b2b-2026/ |
+```text
+2. Liste os principais riscos de aplicar IA em pré-vendas sem uma estratégia de dados.
+```
 
-| **Tipo** | Artigo Técnico / Guia Prático |
+```text
+3. Crie uma cadência de prospecção B2B com 5 etapas para uma empresa SaaS, incluindo objetivo, canal e mensagem de cada etapa.
+```
 
-| **Formato** | HTML (Blog post) |
+```text
+4. Gere um checklist para avaliar se uma empresa está pronta para usar IA em pré-vendas.
+```
 
-| **Motivo da Escolha** | Análise específica de contexto brasileiro, dados 2026, casos práticos implementados |
+```text
+5. Compare lead scoring tradicional, lead scoring com IA e intent data em uma tabela.
+```
 
-| **Principais Aprendizados** | - Transferência de tarefas operacionais para IA<br>- SDR como estrategista vs executor<br>- WhatsApp como canal B2B dominante<br>- Redução de tempo entre lead e resposta<br>- Sincronização de comunicação síncrona vs assíncrona |
+```text
+6. Crie perguntas de entrevista para uma vaga de SDR que exige conhecimento de IA e automação.
+```
 
-### Fonte 2: Data Center Allianz - AI-Powered Lead Scoring
+```text
+7. Transforme os aprendizados deste caderno em um post de LinkedIn com linguagem profissional.
+```
 
-| Campo | Descrição |
+```text
+8. Aponte quais afirmações deste resumo precisam de fonte, validação ou cuidado antes de serem publicadas.
+```
 
-|-------|-----------|
+## Passo a Passo para Reproduzir no NotebookLM
 
-| **Nome** | Using AI-Powered Lead Scoring for B2B Sales Teams |
+1. Acesse `https://notebooklm.google.com`.
+2. Clique em criar novo caderno.
+3. Nomeie o caderno como `IA em Pré-Vendas B2B: SDRs, BDRs e RevOps`.
+4. Adicione as 5 fontes listadas na seção de curadoria.
+5. Aguarde o NotebookLM processar as fontes.
+6. Comece pelo prompt de resumo executivo.
+7. Depois use o prompt de conceitos fundamentais.
+8. Gere uma comparação entre SDR tradicional e SDR com IA.
+9. Peça um plano de implementação em 30, 60 e 90 dias.
+10. Use o prompt de revisão crítica para identificar riscos e lacunas.
+11. Salve as melhores respostas como notas.
+12. Consolide as notas em três partes: resumo, glossário e prompts reutilizáveis.
+13. Copie os principais aprendizados para este README.
+14. Revise os links, fontes e dados antes de entregar na DIO.
 
-| **Link** | https://datacenterallianz.com/whitepaper/using-ai-powered-lead-scoring-for-b2b-sales-teams |
+## Como Entregar na DIO
 
-| **Tipo** | Whitepaper Técnico |
+1. Crie ou abra o repositório no GitHub.
+2. Adicione este arquivo `README.md` na raiz do repositório.
+3. Confirme se as seções obrigatórias estão presentes: contexto, objetivos, fontes, prompts, cicatrizes e miniguia.
+4. Copie a URL principal do repositório.
+5. Na plataforma da DIO, clique em entregar projeto.
+6. Cole o link do repositório.
+7. Adicione uma descrição curta, por exemplo:
 
-| **Formato** | PDF / Whitepaper |
+```text
+Projeto sobre IA aplicada a pré-vendas B2B, usando NotebookLM para curadoria de fontes, organização de conhecimento, prompts reutilizáveis e criação de um miniguia de estudo para SDRs, BDRs e RevOps.
+```
 
-| **Motivo da Escolha** | Análise técnica aprofundada, modelos matemáticos, implementação em produção |
+## Aprendizados Finais
 
-| **Principais Aprendizados** | - Modelos Random Forest e Gradient Boosting como líderes<br>- Integração de sinais comportamentais + contextuais<br>- Scoring preditivo vs reativo<br>- Validação de modelos em ambiente real<br>- ROI de lead scoring automático |
+Este projeto mostrou que a IA pode ser uma ferramenta poderosa de aprendizagem e produtividade, mas seu valor depende da qualidade das fontes, da clareza dos prompts e da capacidade humana de revisar criticamente as respostas.
 
-### Fonte 3: Xactly Corp - RevOps AI Automation 2026
-
-| Campo | Descrição |
-
-|-------|-----------|
-
-| **Nome** | RevOps Automation in 2026: How Leaders Reduce Cost & Increase Forecast Accuracy |
-
-| **Link** | https://www.xactlycorp.com/blog/sales-planning/revops-automation-2026 |
-
-| **Tipo** | Research Report / Industry Insights |
-
-| **Formato** | Blog Post com Dados de Pesquisa |
-
-| **Motivo da Escolha** | Visão empresarial, dados de adoção, impacto financeiro mensurável |
-
-| **Principais Aprendizados** | - Aumento de 17% em receita com IA<br>- Empresas com RevOps: +36% crescimento<br>- Redução de 70% para 30% em tarefas administrativas<br>- Mercado RevOps: $3.45B (2024) → $10.25B (2033)<br>- AI agents automatizando CRM, routing, triggers |
-
-### Fonte 4: LeanData - AI RevOps Realities 2026
-
-| Campo | Descrição |
-
-|-------|-----------|
-
-| **Nome** | What AI Really Means for RevOps in 2026 |
-
-| **Link** | https://www.leandata.com/blog/ai-revops-realities-2026/ |
-
-| **Tipo** | Market Analysis / Best Practices |
-
-| **Formato** | Blog Post com Estudos de Caso |
-
-| **Motivo da Escolha** | Visão crítica sobre adoção real vs hype, cases concretos, alinhamento sales-marketing |
-
-| **Principais Aprendizados** | - 30% das orgs com alinhamento sales-marketing<br>- AI enforce data quality em CRM<br>- Forecast credibility aumenta 28%<br>- Lead routing automático com IA<br>- Integração de sistemas como prioridade |
-
-### Fonte 5: Apollo.io - AI Sales Intelligence Platform
-
-| Campo | Descrição |
-
-|-------|-----------|
-
-| **Nome** | Apollo.io: Plataforma Completa de Vendas B2B com IA |
-
-| **Link** | https://www.apollo.io/pt |
-
-| **Tipo** | Documentação de Produto / Recursos |
-
-| **Formato** | SaaS Platform Documentation |
-
-| **Motivo da Escolha** | Exemplifica implementação prática, features de IA em uso, automação de cadências |
-
-| **Principais Aprendizados** | - Enriquecimento de dados em escala<br>- Automação de cadências com personalização<br>- Intent data e signal tracking<br>- Integração com CRM nativo<br>- Redução de 70% em tempo de pesquisa |
-
----
+Para SDRs e BDRs, a IA não deve ser vista apenas como automação de mensagens. O maior ganho está em estudar melhor o mercado, priorizar contas com mais critério, personalizar abordagens com responsabilidade e transformar dados em decisões comerciais melhores.
