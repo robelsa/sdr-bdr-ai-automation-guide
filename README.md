@@ -26,7 +26,7 @@ Este projeto usa o NotebookLM como ferramenta de estudo para transformar fontes 
 
 As fontes abaixo foram selecionadas para alimentar o caderno no NotebookLM. A ideia foi combinar relatórios de mercado, artigos de análise e documentação oficial da ferramenta utilizada.
 
-| Fonte | Tipo | Link | Por que foi escolhida |
+| Fonte | Tipo | Link | Por que |
 |---|---|---|---|
 | Salesforce State of Sales, 7th Edition | Relatório de mercado | https://www.salesforce.com/en/wp-content/uploads/sites/4/documents/reports/sales/salesforce-state-of-sales-report-2026.pdf | Traz dados recentes sobre vendas, IA, agentes, qualidade de dados e produtividade comercial. |
 | HubSpot 2025 State of Sales Report | Relatório/artigo de tendências | https://blog.hubspot.com/sales/hubspot-sales-strategy-report | Mostra desafios atuais de vendas, uso de IA por compradores e vendedores, e mudanças no papel do vendedor. |
