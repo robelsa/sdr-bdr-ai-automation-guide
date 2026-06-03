@@ -1,12 +1,14 @@
 # IA Aplicada a Pré-Vendas B2B: SDRs, BDRs e Automação com NotebookLM
 
+[Acesse o Notebook LM](https://notebooklm.google.com/notebook/492ad8a7-e19a-473f-b0cc-a844ba9f3175)
+
 Projeto desenvolvido para o desafio da DIO sobre o uso de Inteligência Artificial como ferramenta de aprendizagem ativa, curadoria de fontes e organização do conhecimento com NotebookLM.
 
 Repositório: `sdr-bdr-ai-automation-guide`
 
 ## Contexto
 
-O tema escolhido para este caderno temático foi o uso de Inteligência Artificial em pré-vendas B2B, com foco nas rotinas de SDRs, BDRs e times de RevOps.
+O tema escolhido para este caderno temático foi o uso de Inteligência Artificial em pré-vendas B2B, com foco nas rotinas de SDRs, BDRs e equipes de RevOps.
 
 Em vendas B2B, profissionais de pré-vendas lidam diariamente com pesquisa de contas, priorização de leads, personalização de mensagens, follow-ups, atualização de CRM e qualificação de oportunidades. A IA pode apoiar essas tarefas ao organizar dados, sugerir mensagens, identificar padrões e acelerar pesquisas. Ao mesmo tempo, o uso de IA exige senso crítico: dados ruins geram respostas ruins, automação sem estratégia prejudica a experiência do prospect e respostas de IA precisam ser validadas em fontes confiáveis.
 
@@ -32,8 +34,6 @@ As fontes abaixo foram selecionadas para alimentar o caderno no NotebookLM. A id
 | Google NotebookLM Help - Add or discover sources | Documentação oficial | https://support.google.com/notebooklm/answer/16215270 | Fonte oficial para entender como adicionar fontes, usar pesquisa e organizar materiais no NotebookLM. |
 | Apollo.io | Página de produto/ferramenta | https://www.apollo.io/pt | Exemplo prático de plataforma usada em prospecção B2B, enriquecimento de dados e cadências comerciais. |
 
-Observação: durante o estudo, alguns dados encontrados em materiais de mercado devem ser tratados como referência contextual, não como verdade absoluta. Sempre que um número for usado em apresentações ou entrevistas, ele deve ser citado com fonte, data e contexto.
-
 ## Como Configurei o NotebookLM
 
 Nome do caderno:
@@ -48,29 +48,21 @@ Fontes adicionadas:
 4. Documentação oficial do NotebookLM.
 5. Página da Apollo.io como exemplo de ferramenta de mercado.
 
-Organização sugerida dentro do caderno:
-
-- `01 - Mercado e tendências`
-- `02 - IA aplicada a vendas`
-- `03 - SDR, BDR e RevOps`
-- `04 - Ferramentas e automação`
-- `05 - Prompts e revisões`
-
 ## Engenharia de Prompts
 
 Durante o estudo, usei prompts em quatro categorias: compreensão, comparação, aplicação prática e revisão crítica.
 
 ### Prompt 1 - Resumo Executivo
 
-```text
+```texto
 Com base apenas nas fontes adicionadas ao caderno, crie um resumo executivo sobre IA em pré-vendas B2B. Estruture em: contexto, principais tendências, impacto para SDRs/BDRs, riscos e recomendações práticas.
 ```
 
-Resultado esperado: uma visão geral para abrir o README e explicar o tema de forma clara.
+Resultado esperado: uma visão geral e uma explicação do tema de forma clara.
 
 ### Prompt 2 - Conceitos Fundamentais
 
-```text
+```texto
 Explique os conceitos SDR, BDR, RevOps, ICP, lead scoring, intent data, cadência comercial e automação de vendas. Para cada conceito, traga uma definição simples, um exemplo prático e um cuidado importante.
 ```
 
@@ -78,7 +70,7 @@ Resultado esperado: base para o glossário.
 
 ### Prompt 3 - Comparação Antes e Depois
 
-```text
+```texto
 Compare a rotina de um SDR antes e depois do uso de IA. Considere pesquisa de contas, personalização, priorização de leads, follow-up, CRM e qualificação. Mostre também quais tarefas continuam exigindo julgamento humano.
 ```
 
@@ -86,7 +78,7 @@ Resultado esperado: entender onde a IA ajuda e onde o humano continua essencial.
 
 ### Prompt 4 - Guia de Implementação
 
-```text
+```texto
 Crie um plano de implementação de IA em pré-vendas para uma empresa B2B pequena ou média. Divida em 30, 60 e 90 dias. Inclua objetivos, atividades, responsáveis, métricas e riscos.
 ```
 
@@ -94,19 +86,19 @@ Resultado esperado: framework prático de aplicação.
 
 ### Prompt 5 - Revisão Crítica
 
-```text
+```texto
 Revise a resposta anterior como se você fosse um gestor de RevOps. Aponte lacunas, riscos, dados que precisam de validação e perguntas que deveriam ser feitas antes de implementar a solução.
 ```
 
-Resultado esperado: evitar uma resposta bonita, mas superficial.
+Resultado esperado: evitar uma resposta superficial.
 
 ### Prompt 6 - Prompts para Revisão
 
-```text
+```texto
 Crie 10 perguntas de revisão para eu testar se entendi o tema IA em pré-vendas B2B. Separe em nível iniciante, intermediário e avançado. Depois, gere um gabarito comentado.
 ```
 
-Resultado esperado: transformar o caderno em ferramenta de estudo.
+Resultado:  
 
 ## Cicatrizes e Troubleshooting
 
@@ -221,67 +213,36 @@ Como ajustei: usei prompts pedindo limitações, riscos, pré-condições e perg
 
 ## Prompts Reutilizáveis
 
-```text
+```texto
 1. Resuma esta fonte em 10 bullets e destaque os pontos mais importantes para SDRs.
 ```
 
-```text
+```texto
 2. Liste os principais riscos de aplicar IA em pré-vendas sem uma estratégia de dados.
 ```
 
-```text
+```texto
 3. Crie uma cadência de prospecção B2B com 5 etapas para uma empresa SaaS, incluindo objetivo, canal e mensagem de cada etapa.
 ```
 
-```text
+```texto
 4. Gere um checklist para avaliar se uma empresa está pronta para usar IA em pré-vendas.
 ```
 
-```text
+```texto
 5. Compare lead scoring tradicional, lead scoring com IA e intent data em uma tabela.
 ```
 
-```text
+```texto
 6. Crie perguntas de entrevista para uma vaga de SDR que exige conhecimento de IA e automação.
 ```
 
-```text
+```texto
 7. Transforme os aprendizados deste caderno em um post de LinkedIn com linguagem profissional.
 ```
 
-```text
+```texto
 8. Aponte quais afirmações deste resumo precisam de fonte, validação ou cuidado antes de serem publicadas.
-```
-
-## Passo a Passo para Reproduzir no NotebookLM
-
-1. Acesse `https://notebooklm.google.com`.
-2. Clique em criar novo caderno.
-3. Nomeie o caderno como `IA em Pré-Vendas B2B: SDRs, BDRs e RevOps`.
-4. Adicione as 5 fontes listadas na seção de curadoria.
-5. Aguarde o NotebookLM processar as fontes.
-6. Comece pelo prompt de resumo executivo.
-7. Depois use o prompt de conceitos fundamentais.
-8. Gere uma comparação entre SDR tradicional e SDR com IA.
-9. Peça um plano de implementação em 30, 60 e 90 dias.
-10. Use o prompt de revisão crítica para identificar riscos e lacunas.
-11. Salve as melhores respostas como notas.
-12. Consolide as notas em três partes: resumo, glossário e prompts reutilizáveis.
-13. Copie os principais aprendizados para este README.
-14. Revise os links, fontes e dados antes de entregar na DIO.
-
-## Como Entregar na DIO
-
-1. Crie ou abra o repositório no GitHub.
-2. Adicione este arquivo `README.md` na raiz do repositório.
-3. Confirme se as seções obrigatórias estão presentes: contexto, objetivos, fontes, prompts, cicatrizes e miniguia.
-4. Copie a URL principal do repositório.
-5. Na plataforma da DIO, clique em entregar projeto.
-6. Cole o link do repositório.
-7. Adicione uma descrição curta, por exemplo:
-
-```text
-Projeto sobre IA aplicada a pré-vendas B2B, usando NotebookLM para curadoria de fontes, organização de conhecimento, prompts reutilizáveis e criação de um miniguia de estudo para SDRs, BDRs e RevOps.
 ```
 
 ## Aprendizados Finais
